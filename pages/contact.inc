@@ -53,7 +53,6 @@ center: new google.maps.LatLng(43.316857,5.371027),
 google.maps.event.addDomListener(window, 'load', initialize);
 // ]]> 
 </script>
- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgL-diz9nfBQxB3dDbbYjv-fsfBb5Zeuk&callback=initMap"
-    async defer></script>
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgL-diz9nfBQxB3dDbbYjv-fsfBb5Zeuk&amp;callback=initMap" type="text/javascript"></script>
 
 
