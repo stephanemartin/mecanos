@@ -1,0 +1,204 @@
+/*#navigation li { 
+	display: inline ; 
+	
+}*/
+body {
+margin:0;
+padding:0;
+font-family:arial;
+background-color:#000;
+color:#000;
+}
+
+h1{
+	margin-top: 25px;
+	font-size: 16pt;
+}
+#header{
+width: 750px;
+height:164px;
+margin:0 auto 0 auto;
+background: #000 url("/img/logo4.png") left no-repeat;
+}
+#menu{
+border-top: 5px solid #333;
+
+}
+#navigation {
+background: #333;
+float: left;
+       list-style: none;
+margin: 0;
+padding: 0;
+width: 100%;
+}
+#navigation li {
+float: left;
+font:  80% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+}
+#navigation a.unselected {
+background: #333 url("/img/seperator.gif") bottom right no-repeat;
+color: #ccc;
+display: block;
+float: left;
+margin: 0;
+padding: 8px 12px;
+ text-decoration: none;
+}
+#navigation a.selected {
+/*background: #fff url("/img/back.png") center no-repeat; */
+background-color:white;
+color: #000;
+display: block;
+float: left;
+margin: 0;
+padding: 8px 12px;
+	 text-decoration: none;
+}
+#navigation a:hover {
+background: #2580a2 url("/img/hover.gif") bottom center no-repeat;
+color: #fff;
+       padding-bottom: 8px;
+}
+#content {
+/*padding:10px 0 0 0;*/
+margin:1em auto 3em auto;
+width:750px;
+height:100%;
+font-size:14px;
+border:5px solid #000;
+background-color:#fff;
+color:#000;
+line-height:1.3em;
+}
+
+#corp {
+	padding:10px 20px 10px 30px;
+/*	background: white url("/img/fond.png") top center no-repeat;*/
+	margin:40px 0 0 0;
+	text-align: justify;
+}
+#w3c {
+	/*text-align: center;
+	margin:0em auto 1em auto;
+	width:750px;*/
+	color:#aaaaaa;
+	float:right;
+	font:  8pt "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+}
+#contact {
+	/*text-align: center;
+	margin:0em auto 1em auto;
+	width:750px;*/
+	float:left;
+	color:#aaaaaa;
+	font:  8pt "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+}
+
+#minilogo {
+	background: #000;
+	width: 100%;
+	height: 17px;
+	/*position:relative;
+	bottom:0;*/
+	text-align: right;
+	margin-top: -17px;
+}
+#logo {
+	text-align: center;
+}
+
+#logo table {
+	text-align: center;
+	width: 100%;
+}
+
+#lastmod {
+	text-align: center;
+	font:  7pt "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+	margin-bottom: -10px;
+	margin-top: 10px;
+}
+
+a.contact:hover {
+background-color:#000;
+text-decoration:none;
+color:#fff;
+}
+
+#popup {
+	padding:10px 20px 10px 30px;
+/*	background: white url("/img/fond.png") top center no-repeat;*/
+	margin:60px auto 0 auto;
+	z-index: 99; 
+	display: none; 
+	background-color:white;
+/*	position: absolute; */
+	width: 560px;
+	height: 350px;
+	/*margin:auto;*/
+
+	
+}
+#closepopup {
+height: 21px;
+width: 21px;
+margin-top:-21px;
+margin-left:auto;
+margin-right:-21px;
+background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAACE0lEQVR42o2UQaRiURjHWw2PFEO0ipQi4tGq1ayGeES0jYhoFRGt2kZElCFKPIoMj1albbSKiFaznZTLkCKGx/e+7+h/vXvc++rj5+qc//117rnnfi4isuOZGTIGo9c7M2NyyOvoA+6bzKztdkvr9ZpWq5W6arWRBXwlDYhDktfrlTqdDoXDYU64LLjdbioWi/InEF+ZjJ3UC+FyuYTsLsPhEOL/zA9d+gqhx+N5SAj6/T7EBvMd0gRDl8uFgsGgCnq9Xsrn83K1FaVSKYpGo+bv6XQKcRPSEUPtdtsMVatV8yX5fD6LsNFoYM4cSyaTn/f3SaT/GAoEAmYoFouRYRgqtdvtlBhCVLlcRl6xWCww9SJS9SYxCeLxuEXc7XYJVavV9Lwau1VbSSeTiR7SV+woBJlMBpE3JR2Px45vdzAYEOp4PJLf739MOp/PbYOtVotQ5/MZW2ErLpVKiP5S0v1+/6VQToNsxeFwcBTLF4i4SP8wlE6nzUAulyNUpVLBuEU8m80s0s1mg1ueXWJm5EhY9kdu1o+NIIdeVipPgrF6vQ7hGof/ifnLUK/XQ/BhIpGIfI2Q/oRUeLn1SSoUCg8LQ6HQ58d+tWt9VcxKk8BX5ITs9el0wi0r5psuBflbG1N7OhqN1MoTiYQim81Ss9lEL0WNZAudmjSIMm90v3aW5nxHCgJMhekz6xu/mQaTRM6ODwmaWwIhjSxoAAAAAElFTkSuQmCC");
+}
+
+#backpopup {
+	z-index: 98; 
+/*	display: none; */
+	background-color:black;
+	display: block; 
+	position: absolute; 
+	left: 0; 
+	top: 0; 
+	width: 100%; 
+	height: 100%;
+}
+a.w3c:hover {
+color:#fff;
+}
+a.w3c {
+color:#369;
+/*background-color:#fff;*/
+text-decoration:none;
+}
+
+a {
+color:#369;
+text-decoration:none;
+
+}
+a:hover {
+/*background-color:#000;*/
+text-decoration:none;
+color:#000;
+}
+p.error{
+	font-size:20px;
+	text-align: center;
+	color: red;
+}
+.floatleft{
+	margin: 5px 5px 5px 5px;
+	float:left;
+}
+.floatright{
+	margin: 5px 5px 5px 5px;
+	float:right;
+}
+.center{
+	text-align: center;
+}
+
+	
+img{
+	border : none;
+}
