@@ -25,12 +25,7 @@ fonctionnement de l’association est présenté lors du premier accueil.</p>
 
  <!-- begin VideoJS -->
  <div class="center">
- <object  type="application/x-shockwave-flash" width="560" height="315" data="https://www.youtube.com/v/_vmbpwTUVoc?version=3&amp;hl=fr_FR">
- <param name="movie" value="https://www.youtube.com/v/_vmbpwTUVoc?version=3&amp;hl=fr_FR" />
- <param name="allowFullScreen" value="true"/>
- <param name="allowscriptaccess" value="always"/>
- </object>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_vmbpwTUVoc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
  <!-- End VideoJS -->
