@@ -17,8 +17,10 @@ foreach($pages as $key=> $value){
 }
 if($numpage==-1){
 	header("HTTP/1.0 404 Not Found");
+//	header("Status: 404 Not Found");
 }else{
 	header("HTTP/1.0 200 Ok",true,200);
+//	header("Status: 200 Ok",true,200);
 }		
 printf("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
 ?>
@@ -91,8 +93,13 @@ foreach($pagestitle as $key=> $value){
 <?php
 if(file_exists($file)){
 	include($file);
-	date_default_timezone_set('Europe/Paris');
+	if(function_exists('date_default_timezone_set')){
+		date_default_timezone_set('Europe/Paris');
+	}
 	setlocale(LC_ALL,'fr_FR'); 
+	//setlocale (LC_TIME, 'fr_FR.utf8','fra'); 
+	//setlocale (LC_TIME, 'fr_FR'); 
+	/*echo "<div id='lastmod'>Dernière modification effectuée le ".strftime("%A %d %B %G à %H:%M",filemtime($file))."</div>";*/
 	echo "<div id='lastmod'>Dernière modification effectuée le ".strftime("%d/%m/%G à %H:%M",filemtime($file))."</div>";
 
 
@@ -105,7 +112,7 @@ if(file_exists($file)){
 ?>
 </div>
 <div id="popup"></div>
-<div id="w3c" ><a class="w3c" href="http://validator.w3.org/check?uri=referer" onclick="window.open(this.href); return false;" ><img class="w3c" src="img/valide-xhtml.png" alt="XHTML valide"/></a> <a class="w3c" href="http://jigsaw.w3.org/css-validator/check/referer"  onclick="window.open(this.href); return false;"><img  class="w3c" src="img/valide-css.png" alt="Css valide"/></a> </div>
+<div id="w3c" ><a class="w3c" href="https://validator.w3.org/check?uri=referer" onclick="window.open(this.href); return false;" ><img class="w3c" src="img/valide-xhtml.png" alt="XHTML valide"/></a> <a class="w3c" href="https://jigsaw.w3.org/css-validator/check/referer"  onclick="window.open(this.href); return false;"><img  class="w3c" src="img/valide-css.png" alt="Css valide"/></a> </div>
 <div id="contact">Contact : <a class="contact" href="mailto:mecanosducoeur@sfr.fr">mecanosducoeur@sfr.fr</a></div>
 </div>
 <script type="text/javascript"> 
